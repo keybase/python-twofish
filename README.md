@@ -14,5 +14,3 @@ Compatible with Python 2 and 3.
 >>> print(T.decrypt(x))
 YELLOWSUBMARINES
 ```
-
-TODO: tests.
