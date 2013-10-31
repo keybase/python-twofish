@@ -5,7 +5,7 @@ twofish_module = Extension('_twofish',
                           include_dirs=['twofish-0.3'])
 
 setup(name='twofish',
-      version='0.1.0',
+      version='0.2.0',
       description='Bindings for the Twofish implementation by Niels Ferguson',
       author='Filippo Valsorda',
       author_email='filippo.valsorda@gmail.com',
@@ -20,4 +20,5 @@ setup(name='twofish',
                    'Programming Language :: Python :: 3.3',
                    'Topic :: Security :: Cryptography',
                    'Topic :: Software Development :: Libraries'],
-      license='3-clause BSD')
+      license='3-clause BSD',
+      long_description=open('README.md').read())
