@@ -1,3 +1,13 @@
+"""
+This file is part of Python Twofish
+a Python bridge to the C Twofish library by Niels Ferguson
+
+Released under The BSD 3-Clause License
+Copyright (c) 2013 Keybase
+
+Python module and ctypes bindings
+"""
+
 import imp
 import sys
 
@@ -44,7 +54,6 @@ def _ensure_bytes(data):
     if (IS_PY2 and not isinstance(data, str)) or (not IS_PY2 and not isinstance(data, bytes)):
         raise TypeError('can not encrypt/decrypt unicode objects')
 
-    return data
 
 class Twofish():
     def __init__(self, key):

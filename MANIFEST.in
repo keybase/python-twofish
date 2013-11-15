@@ -1,0 +1,4 @@
+include twofish-0.3/twofish.h
+include README.rst
+include tox.ini
+include LICENSE

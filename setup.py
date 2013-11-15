@@ -1,3 +1,13 @@
+"""
+This file is part of Python Twofish
+a Python bridge to the C Twofish library by Niels Ferguson
+
+Released under The BSD 3-Clause License
+Copyright (c) 2013 Keybase
+
+setup.py - build and package info
+"""
+
 from distutils.core import setup, Extension
 
 twofish_module = Extension('_twofish',
@@ -5,7 +15,7 @@ twofish_module = Extension('_twofish',
                           include_dirs=['twofish-0.3'])
 
 setup(name='twofish',
-      version='0.2.0',
+      version='0.3.0',
       description='Bindings for the Twofish implementation by Niels Ferguson',
       author='Filippo Valsorda',
       author_email='filippo.valsorda@gmail.com',
@@ -21,4 +31,4 @@ setup(name='twofish',
                    'Topic :: Security :: Cryptography',
                    'Topic :: Software Development :: Libraries'],
       license='3-clause BSD',
-      long_description=open('README.md').read())
+      long_description=open('README.rst').read())
