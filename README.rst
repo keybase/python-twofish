@@ -23,7 +23,7 @@ Create a ``twofish.Twofish`` instance with a key of length ]0, 32] and then use 
 
 All values must be binary strings (``str`` on Python 2, ``bytes`` on Python 3)
 
-**[WARNING]** this should be used in a senseful cipher mode, like CTR or CBC. If you don't know what this mean, you should probably usa a higher level library.
+**[WARNING]** this should be used in a senseful cipher mode, like CTR or CBC. If you don't know what this mean, you should probably use a higher level library.
 
 Example
 -------
