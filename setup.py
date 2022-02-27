@@ -8,7 +8,7 @@ Copyright (c) 2013 Keybase
 setup.py - build and package info
 """
 
-from distutils.core import setup, Extension
+from setuptools import setup, Extension
 
 twofish_module = Extension('_twofish',
                           sources=['twofish-0.3/twofish.c', 'twofish.c'],
